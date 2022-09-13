@@ -2,7 +2,7 @@
   "name": "js-project_team3",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Alena-Abharian.github.io/cocktail-website",
+  "homepage": "https://alena-abharian.github.io/cocktail-website/",
   "scripts": {
     "start": "parcel src/*.html --open",
     "build": "parcel build src/*.html --public-url /goit-js-project_team3/"
