@@ -1,0 +1,48 @@
+<div class="backdrop__mobile visually-hidden" data-menu>
+  <div class="container menu__container">
+    <div class="menu__header">
+      <!-- // logo  -->
+      <a href="./index.html" class="menu__logo"><span>COCKTAILS</span></a>
+      <!-- // theme toggler -->
+      <ul class="menu__theme-list">
+        <li class="menu__theme-item header__theme-light">Light</li>
+        <li>
+          <div class="toggle">
+            <input type="checkbox" name="toggle" id="toggle-button-menu" class="toggle-button dark-mode-toggle" />
+            <label for="toggle-button" class="text"></label>
+          </div>
+        </li>
+
+        <li class="menu__theme-item header__theme-dark">Dark</li>
+      </ul>
+      <button class="btn menu__login-btn js-btn-login" type="button" data-modal-sign-in-open data-sign>
+        Log in
+      </button>
+    </div>
+
+    <!-- // search -->
+    <div class="menu__search">
+      <form class="menu__search-wrapper">
+        <input type="search" placeholder="Search" name="search" class="menu__search-input" />
+        <button class="menu__search-btn" type="submit">
+          <span class="menu__search-border"></span>
+          <svg class="menu__search-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-earch"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <ul class="menu__nav-list">
+      <li class="menu__nav-item">
+        <a class="menu__nav-link" href="/src/index.html">Home</a>
+      </li>
+      <li class="menu__nav-item menu__fav-item">
+        <button class="menu__nav-link js-menu-btn-fav-cock"> Cocktails</button>
+      </li>
+      <li class="menu__nav-item menu__fav-item">
+        <button class="menu__nav-link js-menu-btn-fav-ingr"> Ingredients</button>
+      </li>
+    </ul>
+  </div>
+</div>

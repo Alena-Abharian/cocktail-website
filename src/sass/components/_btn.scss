@@ -1,0 +1,30 @@
+.btn {
+  /* reset browser styles  - для кнопки потрібно скидати стилі*/
+  display: inline-flex;
+  text-align: center;
+  border-color: transparent;
+
+  justify-content: center;
+  align-items: center;
+  border-width: 0;
+  font-family: inherit;
+  font-style: inherit;
+  border-radius: 4px;
+}
+#runaway-btn {
+  @include mq(noDesk) {
+    display: none;
+  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 50px;
+  min-width: 200px;
+  font-size: 22px;
+  border-radius: 5px;
+  border: none;
+  color: var(--white-color);
+  box-shadow: 1px 1px 5px var(--white-color);
+  background-color: var(--accent-color);
+}

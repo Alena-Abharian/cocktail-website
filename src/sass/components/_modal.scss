@@ -1,0 +1,284 @@
+.backdrop__cocktail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background-color);
+}
+
+.modal__ingredient,
+.modal__cocktail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: var(--modal-bg-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+  0 2px 1px rgba(0, 0, 0, 0.2);
+  //border-radius: 4px 0 0 0;
+  overflow: overlay;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.modal__cocktail {
+  min-width: 320px;
+  height: 600px;
+  @include mq(tab-only) {
+    width: 768px;
+    height: 598px;
+  }
+  @include mq(desk) {
+    width: 822px;
+    height: 598px;
+
+  }
+}
+
+.modal__ingredient {
+  width: 320px;
+  height: 600px;
+  //height: 990px;
+
+  @include mq(tab-only) {
+    width: 768px;
+    height: 598px
+  }
+  @include mq(desk) {
+    width: 715px;
+    height: 598px
+  }
+}
+
+.modal__wrap {
+  @include mq(tab) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.cocktail__img {
+  width: 320px;
+  height: 320px;
+  //border-radius: 4px;
+  @include mq(tab) {
+    width: 288px;
+    height: 320px;
+  }
+}
+
+.cocktail__modal-btn {
+  margin-bottom: 28px;
+  margin-left: 32px;
+  @include mq(tab) {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 28px;
+    margin-right: 28px;
+  }
+}
+
+.modal__btn {
+  text-align: center;
+  border-color: transparent;
+  border-radius: 4px;
+  //max-width: 185px;
+  padding: 0 24px 0 24px;
+  height: 48px;
+  margin-top: 20px;
+  font-family: var(--gallery-font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  background: var(--btn-text-color);
+}
+
+.modal__btn:hover,
+.modal__btn:focus {
+  background: var(--btn-bg-color);
+  color: var(--white-color);
+}
+
+.modal__btn:active {
+  color: var(--btn-bg-color);
+  background: var(--btn-bg-color)
+}
+
+.ingredient__name,
+.cocktail__name {
+  margin-top: 40px;
+  margin-left: 32px;
+  font-family: var(--gallery-font-family);
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--modal-title-color);
+}
+
+.ingredient__title,
+.cocktail__title {
+  margin-top: 8px;
+  margin-left: 32px;
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--modal-title-color);
+}
+
+.cocktail__text {
+  margin-top: 8px;
+  margin-left: 32px;
+  font-family: var(--primary-font-family);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--modal-title-color);
+}
+
+.ingredient {
+  margin-top: 8px;
+  margin-left: 32px;
+  height: 160px;
+  max-width: 320px;
+  margin-bottom: 43px;
+
+  @include mq(desk) {
+    //min-width: 502px;
+    min-width: 430px;
+    overflow: overlay;
+  }
+  @include mq(tab-only) {
+    min-width: 448px;
+  }
+}
+
+.ingredient__item {
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--modal-text-color);
+}
+
+.ingredient__accent {
+  color: var(--modal-title-color);
+}
+
+.ingredient-link {
+  cursor: pointer;
+}
+
+.ingredient-link:hover {
+  color: var(--accent-color);
+}
+
+.recipe__wrap {
+  margin-left: 28px;
+}
+
+.recipe__title {
+  margin-top: 28px;
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--modal-title-color);
+}
+
+.recipe__text {
+  //min-width: 270px;
+  max-width: 722px;
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--modal-text-color);
+  overflow: overlay;
+  @include mq(tab) {
+    //max-width: 764px;
+    max-height: 90px;
+  }
+  @include mq(desc) {
+    max-height: 200px;
+  }
+}
+
+.btn--close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-left: auto;
+  padding: 0;
+  display: flex;
+  background-color: transparent;
+  border: transparent;
+  fill: var(--accent-color);
+}
+
+//.......modal-2
+
+.accent__text {
+  font-weight: 600;
+  color: var(--modal-accent-text-color);
+}
+
+.description__text {
+  margin-top: 28px;
+  margin-left: 32px;
+  max-width: 654px;;
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--modal-text-color);
+}
+
+.characteristic {
+  margin-top: 28px;
+  margin-bottom: 40px;
+  margin-left: 28px;
+}
+
+.view {
+  margin-bottom: 40px;
+}
+
+.line {
+  border-bottom: 1px solid var(--accent-color);
+  min-width: 320px;
+  @include mq(desk) {
+    min-width: 715px;
+  }
+}
+
+.backdrop__cocktail ::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 4px;
+}
+
+.backdrop__cocktail ::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+.backdrop__cocktail ::-webkit-scrollbar-thumb {
+  background: #FD5103;
+  border-radius: 4px;
+}
+
+.ing_card_wrap {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}

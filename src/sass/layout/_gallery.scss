@@ -1,0 +1,313 @@
+// --- common styles
+.gallery {
+  font-family: var(--gallery-font-family);
+  // outline: 2px dotted limegreen;
+}
+
+.gallery-section {
+  margin-bottom: 55px;
+}
+
+.gallery__title {
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.91;
+  color: var(--title-light-color);
+  @include mq(noDesk) {
+    margin-top: 60px;
+  }
+
+  @include mq(fab) {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  @include mq(tab) {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.31;
+  }
+
+  @include mq(desk) {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.5;
+  }
+}
+
+// --- gallery cocktails styles
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  // padding-left: 20px;
+  // padding-right: 20px;
+
+  @include mq(tab) {
+    --card-item: 2;
+    --card-gap: 20px;
+  }
+
+  @include mq(desk) {
+    --card-item: 3;
+    --card-gap: 20px;
+  }
+}
+
+.gallery__img {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.gallery__list-name {
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--title-light-color);
+
+  @include mq(fab) {
+    margin-bottom: 25px;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  @include mq(tab) {
+    margin-bottom: 25px;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  @include mq(desk) {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
+
+.gallery__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+  box-sizing: border-box;
+  &:hover,
+  &:focus {
+    box-shadow: -10px 10px 20px #acabab, 10px -10px 20px #ffffff;
+  }
+}
+
+// --- gallery styles for ingredients
+.gallery__list-ingr {
+  display: flex;
+  justify-content: space-between;
+
+  @include mq(tab) {
+    --card-item: 2;
+    --card-gap: 20px;
+  }
+
+  @include mq(desk) {
+    --card-item: 3;
+    --card-gap: 20px;
+  }
+
+  & .gallery__list-item {
+    // padding: 20px;
+    @include mq(fab) {
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    @include mq(tab) {
+      margin-bottom: 28px;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    @include mq(desk) {
+      max-width: 395px;
+      // justify-content: space-around;
+      margin-bottom: 28px;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+  }
+
+  & .gallery__list-name {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: inherit;
+    color: var(--gallery-title-color);
+
+    @include mq(fab) {
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    @include mq(tab) {
+      margin-bottom: 28px;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    @include mq(desk) {
+      margin-bottom: 28px;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+  }
+
+  & .gallery__list-type {
+    margin-bottom: 20px;
+    font-family: var(--title-font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--gallery-subtitle-color);
+
+    @include mq(fab) {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    @include mq(tab) {
+      padding-bottom: 28px;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    @include mq(desk) {
+      padding-bottom: 28px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}
+
+// --- buttons styles
+.gallery__btn-container {
+  padding: 28px;
+  display: flex;
+  justify-content: space-evenly;
+
+  @include mq(fab) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @include mq(tab) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @include mq(desk) {
+    padding: 28px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.gallery__btn {
+  // padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.02em;
+  outline: transparent;
+  border-color: transparent;
+
+  @include mq(fab) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @include mq(tab) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @include mq(desk) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.gallery__btn-more {
+  // padding-left: 38px;
+  // padding-right: 38px;
+
+  padding: 12px 27px;
+  color: var(--white-color);
+  background-color: var(--btn-bg-color);
+
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover-color);
+    color: var(--white-color);
+  }
+}
+
+.gallery__btn-fav {
+  padding: 12px 10px;
+  color: var(--btn-bg-color);
+  background-color: var(--gallery-btn-fav-color);
+  border: 1px solid var(--btn-outline-color);
+
+  &:hover,
+  &:focus {
+    outline: 1px solid var(--btn-hover-color);
+    color: var(--btn-hover-color);
+  }
+}
+
+.gallery__btn-fav .gallery__btn-fav-svg {
+  fill: var(--heart-color);
+  stroke: var(--btn-bg-color);
+  stroke-width: 2px;
+}
+
+.gallery__btn-fav.is-checked .gallery__btn-fav-svg {
+  fill: var(--accent-color);
+}
+.mob-open {
+  color: transparent;
+}
+
+.ing-card-wrap {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ing-card-wrap-modal {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,33 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+@import './utils/reset';
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/theme';
+
+@import './base/common';
+@import './base/cardSet';
+@import './base/container';
+@import './base/section';
+
+@import './components/btn';
+@import './components/mobileMenu';
+@import './components/siteNav';
+@import './components/spinner';
+@import './components/switcherDarkLight';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/modalCocktails';
+@import './components/modalIngridients';
+@import './components/modalSignIn';
+@import './components/modalTeam';
+@import './components/modalAnnoy';
+@import './components/modalFooterTeam';
+@import './components/favIngridients';
+@import './components/favCocktails';
+
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/gallery';
+@import './layout/footer';

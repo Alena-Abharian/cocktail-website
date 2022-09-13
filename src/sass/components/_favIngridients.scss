@@ -1,0 +1,235 @@
+// --- common styles
+.fav-ing {
+    font-family: var(--fav-ing-font-family);
+    // outline: 2px dotted limegreen;
+  }
+
+  .fav-ing-section {
+    margin-top: 80px;
+    margin-bottom: 55px;
+  }
+
+  .fav-ing__title {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.91;
+    color: var(--title-light-color);
+
+    @include mq(fab) {
+      font-weight: 700;
+      font-size: 32px;
+    }
+
+    @include mq(tab) {
+      font-weight: 700;
+      font-size: 32px;
+    }
+
+    @include mq(desk) {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 1.5;
+    }
+  }
+
+  // --- fav-ing cocktails styles
+  .fav-ing__list {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    // padding-left: 20px;
+    // padding-right: 20px;
+
+    @include mq(tab) {
+      --card-item: 2;
+      --card-gap: 20px;
+    }
+
+    @include mq(desk) {
+      --card-item: 3;
+      --card-gap: 20px;
+    }
+  }
+
+  .fav-ing__img {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 3px 3px 0px 0px;
+  }
+
+  .fav-ing__list-name {
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--title-light-color);
+
+    @include mq(fab) {
+      margin-bottom: 15px;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    @include mq(tab) {
+      margin-bottom: 15px;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    @include mq(desk) {
+      margin-bottom: 15px;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+  }
+
+  .fav-ing__list-item {
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+
+    .fav-ing__list-name {
+      margin-bottom: 15px;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.6;
+      text-align: inherit;
+      color: var(--gallery-title-color);
+
+      @include mq(fab) {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 1.2;
+      }
+
+      @include mq(tab) {
+        margin-bottom: 28px;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 1.2;
+      }
+
+      @include mq(desk) {
+        margin-bottom: 28px;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 1.2;
+      }
+    }
+
+    .fav-ing__list-type {
+      margin-bottom: 20px;
+      font-family: var(--title-font-family);
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.5;
+      text-transform: uppercase;
+      color: var(--gallery-subtitle-color);
+
+      @include mq(fab) {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      @include mq(tab) {
+        padding-bottom: 28px;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      @include mq(desk) {
+        padding-bottom: 28px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+
+
+  // --- buttons styles
+  .fav-ing__btn-container {
+    // padding-left: 20px;
+    // padding-right: 20px;
+    // padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fav-ing__btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.02em;
+    outline: transparent;
+    border-color: transparent;
+
+    @include mq(fab) {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    @include mq(tab) {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    @include mq(desk) {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+
+  .fav-ing__btn-more {
+    // padding-left: 38px;
+    // padding-right: 38px;
+    color: var(--white-color);
+    background-color: var(--btn-bg-color);
+
+    &:hover,
+    &:focus {
+      background-color: var(--btn-hover-color);
+      color: var(--white-color);
+    }
+  }
+
+  .fav-ing__btn-fav {
+    color: var(--btn-bg-color);
+    background-color: var(--fav-ing-btn-fav-color);
+    border: 1px solid var(--btn-outline-color);
+
+    &:hover,
+    &:focus {
+      outline: 1px solid var(--btn-hover-color);
+      color: var(--btn-hover-color);
+    }
+  }
+
+
+  .fav-ingredient-container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .ing_card_wrap_modal {
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+  }

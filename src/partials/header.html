@@ -1,0 +1,84 @@
+<header class="header">
+  <div class="container header__container">
+    <a href="./index.html" class="header__logo"><span>COCKTAILS</span>
+      <picture>
+        <source srcset="
+            ./images/test/cocktailXtab.png,
+            ./images/test/cocktailXxtab.png 2x
+          " type="image/png" media="(min-width: 768px)" />
+        <source srcset="
+            ./images/test/cocktailXmob.png  1x,
+            ./images/test/cocktailXxmob.png 2x
+          " type="image/png" media="(max-width: 767px)" />
+        <img class="coctail-header" loading="lazy" src="./images/test/cocktailXmob.png" alt="coctail" />
+      </picture>
+      <picture>
+        <source srcset="
+            ./images/test/whiteXtab.png  1x,
+            ./images/test/whiteXxtab.png 2x
+          " type="image/png" media="(min-width: 768px)" />
+        <source srcset="
+            ./images/test/whiteXmob.png  1x,
+            ./images/test/whiteXxmob.png 2x
+          " type="image/png" media="(max-width: 767px)" />
+        <img class="drink-white" loading="lazy" src="./images/test/whiteXmob.png" alt="drink" />
+      </picture>
+
+      <picture>
+        <source srcset="./images/test/vtab.png 1x, ./images/test/vectab.png 2x" type="image/png"
+          media="(min-width: 768px)" />
+        <source srcset="./images/test/vmob.png 1x, ./images/test/vecmob.png 2x" type="image/png"
+          media="(max-width: 767px)" />
+        <img id="fill" class="drink-header" loading="lazy" src="./images/test/vmob.png" alt="drink" />
+      </picture>
+    </a>
+
+    <ul class="header__nav-list">
+      <li class="header__nav-item">
+        <a class="header__nav-link" href="/src/index.html">Home</a>
+      </li>
+      <li class="header__nav-item fav__select">
+        <div class="fav__select-input">Favorite</div>
+        <ul class="fav__list visually-hidden">
+          <li class="fav__dropdown-item">
+            <button class="fav__nav-link js-btn-fav-cock">Favorite cocktails</button>
+          </li>
+          <li class="fav__dropdown-item">
+            <button class="fav__nav-link js-btn-fav-ingr">Favorite ingredients</button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="header__search">
+      <form class="header__search-wrapper">
+        <input type="search" placeholder="Search" name="search" class="header__search-input" />
+        <button class="header__search-btn" type="submit">
+          <span class="header__search-border"></span>
+          <svg class="header__search-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-earch"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <ul class="header__theme-list">
+      <li class="header__theme-item header__theme-light">Light</li>
+      <li>
+        <div class="toggle">
+          <input type="checkbox" name="toggle" id="toggle-button" class="toggle-button dark-mode-toggle" />
+          <label for="toggle-button" class="text"></label>
+        </div>
+      </li>
+
+      <li class="header__theme-item header__theme-dark">Dark</li>
+    </ul>
+    <button class="btn login-btn js-btn-login pulse" type="button" data-modal-sign-in-open data-sign>
+      Log in
+    </button>
+    <button type="button" class="btn btn__burger-menu-toggle" data-menu-toggle aria-expanded="false">
+      <svg class="menu__toggle-icon" width="40" height="40">
+        <use class="menu__open-icon" href="./images/icons.svg#icon-menu"></use>
+        <use class="menu__close-icon" href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,11 @@
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--card-gap);
+}
+
+.card-set-item {
+  flex-basis: calc(
+    (100% - ((var(--card-item) - 1) * var(--card-gap))) / var(--card-item)
+  );
+}

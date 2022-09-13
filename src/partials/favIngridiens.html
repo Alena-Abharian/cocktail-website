@@ -1,0 +1,68 @@
+<!-- fav-ing favorite ingredients -->
+<section class="fav-ing-section fav-ing">
+  <div class="container">
+    <h2 class="fav-ing__title">Favorite ingredients</h2>
+    <ul class="fav-ing__list-ingr card-set">
+      <li class="fav-ing__list-item card-set-item">
+        <p class="fav-ing__list-name">Campari</p>
+        <p class="fav-ing__list-type">Liqueur</p>
+        <div class="fav-ing__btn-container">
+          <button class="fav-ing__btn fav-ing__btn-more" type="button">
+            Learn more
+          </button>
+          <button
+            class="fav-ing__btn fav-ing__btn-fav"
+            type="button"
+            data-id="${idDrink}"
+            data-favorite="ingredient"
+          >
+            Remove
+            <svg width="16" height="14">
+              <use
+                class="fav-ing__btn-fav-svg"
+                href="./images/icons.svg#icon-heart"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+
+      <li class="fav-ing__list-item card-set-item">
+        <p class="fav-ing__list-name">Blanco tequila</p>
+        <p class="fav-ing__list-type">Distilled beverage</p>
+        <div class="fav-ing__btn-container">
+          <button class="fav-ing__btn fav-ing__btn-more" type="button">
+            Learn more
+          </button>
+          <button class="fav-ing__btn fav-ing__btn-fav" type="button">
+            Remove
+            <svg width="16" height="14">
+              <use
+                class="fav-ing__btn-fav-svg"
+                href="./images/icons.svg#icon-heart"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="fav-ing__list-item card-set-item">
+        <p class="fav-ing__list-name">Vermouth</p>
+        <p class="fav-ing__list-type">fortified wine</p>
+        <div class="fav-ing__btn-container">
+          <button class="fav-ing__btn fav-ing__btn-more" type="button">
+            Learn more
+          </button>
+          <button class="fav-ing__btn fav-ing__btn-fav" type="button">
+            Remove
+            <svg width="16" height="14">
+              <use
+                class="fav-ing__btn-fav-svg"
+                href="./images/icons.svg#icon-heart"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

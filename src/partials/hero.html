@@ -1,0 +1,109 @@
+<section class="section-hero">
+  <div class="hero-container">
+    <div class="section-content">
+      <h1 class="hero__title">A party without cocktails is not like a party</h1>
+      <p class="hero__text">Search your favorite cocktail by ABC</p>
+      <ul class="hero__list">
+        <li class="hero__item" data-letter="a">A</li>
+        <li class="hero__item" data-letter="b">B</li>
+        <li class="hero__item" data-letter="c">C</li>
+        <li class="hero__item" data-letter="d">D</li>
+        <li class="hero__item" data-letter="e">E</li>
+        <li class="hero__item" data-letter="f">F</li>
+        <li class="hero__item" data-letter="g">G</li>
+        <li class="hero__item" data-letter="h">H</li>
+        <li class="hero__item" data-letter="i">I</li>
+        <li class="hero__item" data-letter="j">J</li>
+        <li class="hero__item" data-letter="k">K</li>
+        <li class="hero__item" data-letter="l">L</li>
+        <li class="hero__item" data-letter="m">M</li>
+        <li class="hero__item" data-letter="n">N</li>
+        <li class="hero__item" data-letter="o">O</li>
+        <li class="hero__item" data-letter="p">P</li>
+        <li class="hero__item" data-letter="q">Q</li>
+        <li class="hero__item" data-letter="r">R</li>
+        <li class="hero__item" data-letter="s">S</li>
+        <li class="hero__item" data-letter="t">T</li>
+        <li class="hero__item" data-letter="u">U</li>
+        <li class="hero__item" data-letter="v">V</li>
+        <li class="hero__item" data-letter="w">W</li>
+        <li class="hero__item" data-letter="x">X</li>
+        <li class="hero__item" data-letter="y">Y</li>
+        <li class="hero__item" data-letter="z">Z</li>
+        <li class="hero__item" data-letter="1">1</li>
+        <li class="hero__item" data-letter="2">2</li>
+        <li class="hero__item" data-letter="3">3</li>
+        <li class="hero__item" data-letter="4">4</li>
+        <li class="hero__item" data-letter="5">5</li>
+        <li class="hero__item" data-letter="6">6</li>
+        <li class="hero__item" data-letter="7">7</li>
+        <li class="hero__item" data-letter="8">8</li>
+        <li class="hero__item" data-letter="9">9</li>
+        <li class="hero__item" data-letter="0">0</li>
+        <li class="hero__item"></li>
+      </ul>
+    </div>
+    <div class="picture-section">
+      <picture>
+        <source
+          srcset="./images/desc1x.png 1x, ./images/desc2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/tab1x.png 1x, ./images/tab2x.png 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/mob1x.png 1x, ./images/mob2x.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="hero__img"
+          src="./images/mob1x.png"
+          alt="drink"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+    <p class="hero__text mob">Search your favorite cocktail by ABC</p>
+
+    <div class="app">
+      <div class="wrap">
+        <div id="select" class="select open">
+          <div class="select__input">
+            <span class="input-span">A</span>
+            <svg class="hero__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container sorry visually-hidden">
+    <h2 class="sorry__title">Sorry, we didn't find any cocktail for you</h2>
+    <div class="sorry__picture">
+      <picture>
+        <source
+          srcset="./images/group/grouptab.png, ./images/group/groupxtab.png 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="
+            ./images/group/groupmob.png  1x,
+            ./images/group/groupxmob.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="sorry__img"
+          src="./images/group/groupmob.png"
+          alt="group"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
